@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error procesando la transacción</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="callback-script-min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="disconnected-icon">
+            <img src="images/icon_disconnect.svg"/>
+        </div>
+
+        <div class="error-title">
+            ¡Uy! nos desconectamos
+        </div>
+
+        <div class="error-description">
+            <pre>Tu transacción aún está en proceso de
+<!--          -->confirmación, carga la página de nuevo o
+<!--          -->espera el mensaje de confirmación.
+            </pre>
+        </div>
+
+        <button id="reload-button" class="reload-button" onclick="window.location.reload()">
+            Cargar de nuevo
+        </button>
+
+        <div class="footer-container">
+            <div class="footer-message">Pago procesado a travéz de</div>
+            <img class="footer-icon" src="images/payu_icon.png"/>
+        </div>
+
+        <div id="counter" class="counter"/>
+    </div>
+</body>
+</html>
